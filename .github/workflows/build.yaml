@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v2
        # see: https://golangci-lint.run/usage/configuration/#config-file
       - name: cancel-action
-        uses: kuritka/cancel-action@v0.0.6
+        uses: kuritka/cancel-action@v0.0.2
         with:
           verbose: true
 #         token: ${{ secrets.REMOVE_WORKFLOW_TOKEN }}
