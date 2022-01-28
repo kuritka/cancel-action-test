@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
        # see: https://golangci-lint.run/usage/configuration/#config-file
+      - name: hu
+        run: |
+          echo "test"
+          VERSION=${{ inputs.generator_version }}
+          echo ${VERSION}
       - name: cancel-action
         uses: kuritka/cancel-action@0.0.2
         with:
