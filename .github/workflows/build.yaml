@@ -19,7 +19,7 @@ jobs:
           VERSION=${{ inputs.generator_version }}
           echo ${VERSION}
       - name: cancel-action
-        uses: kuritka/cancel-action@0.0.13
+        uses: kuritka/cancel-action@0.0.14
         with:
           verbose: true
 #         token: ${{ secrets.REMOVE_WORKFLOW_TOKEN }}
